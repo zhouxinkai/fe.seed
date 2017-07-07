@@ -1,3 +1,9 @@
+## 启动
+yarn install
+yarn run compile
+yarn run dev
+127.0.0.1:9090/test
+
 ## feature list
 - 前后端分离
 - 前端hot load
@@ -7,11 +13,12 @@
 - 首屏加载数据
 - 一些常用的组件
 - node --inspect
+- 懒加载js文件
 
 ## 技术栈
 - Typescript
 - Vue2、Vuex、Vue-router
-- 懒加载js文件
 - axios
 - koa
 - postcss
+
