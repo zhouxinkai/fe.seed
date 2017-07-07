@@ -1,0 +1,13 @@
+<div>
+  <Popup v-if="serverErrorDetail" :pop="true" ignoreCorner="true">
+    <!-- 服务器错误信息 -->
+    <div class="popup-error">
+      <div class="info">
+        <h3>{{ serverErrorDetail.show ? serverErrorDetail.message : '请求失败，请稍候重试'}}</h3>
+        <p v-if="serverErrorDetail.code">CODE: {{ serverErrorDetail.code }}</p>
+      </div>
+      <button class="btn-close" @click="closeError">知道了</button>
+    </div>
+  </Popup>
+  <router-view></router-view>
+</div>

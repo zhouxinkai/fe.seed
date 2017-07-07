@@ -1,0 +1,7 @@
+<div :class="klass" v-if="opened" @click="close">
+  <div :class="contentStyle" @click.stop>
+    <slot></slot>
+    <div :id="id"></div>
+    <button v-if="!ignoreCorner" @click="close" class="close-btn icon icon-close"></button>
+  </div>
+</div>

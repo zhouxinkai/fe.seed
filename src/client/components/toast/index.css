@@ -1,0 +1,28 @@
+.toast{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  font-size: 24px;
+  color: white;
+  line-height: 1;
+  z-index: 99;
+  pointer-events: none;
+
+  span[class^=icon-]{
+    vertical-align: text-bottom;
+    margin-right: 12px;
+  }
+}
+
+.toast-enter-active, .toast-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;;
+  opacity: 1;
+}
+.toast-enter, .toast-leave-to {
+  opacity: 0;
+  transform: translate(-50%, 0%);
+}

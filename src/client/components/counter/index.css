@@ -1,0 +1,37 @@
+$buttonWidth: 21px;
+
+.counter {
+    .disable-all {
+        visibility: hidden;
+    }
+
+    .icon-minus {
+        color: #ccc;
+    }
+
+    button {
+        color: #FF6527;
+        border: 0;
+        background: transparent;
+        padding: 1px;
+        font-size: 21px;
+        vertical-align: middle;
+    }
+
+    .icon-add:active {
+        color: #E35015;
+        background-color: transparent;
+    }
+
+    button:disabled {
+        color: #ccc;
+    }
+
+    .counter-value {
+        font-size: 14px;
+        vertical-align: middle;
+        max-width: 30px;
+        text-align: center;
+        display: inline-block;
+    }
+}

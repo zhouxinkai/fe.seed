@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+export HOME=/home/fe.seed
+NODE_VERSION=7.9.0
+
+command -v node >/dev/null 2>&1 || {
+  cd $HOME
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+  source ~/.bashrc
+  nvm install v${NODE_VERSION}
+  nvm alias default v${NODE_VERSION}
+  nvm alias stable v${NODE_VERSION}
+  cd -
+}
+source $HOME/.bashrc
+[ "v${NODE_VERSION}" != `node -v` ] && {
+  cd /home/fe.seed
+  nvm install v${NODE_VERSION}
+  nvm alias default v${NODE_VERSION}
+  nvm alias stable v${NODE_VERSION}
+  cd -
+}
+
+[[ ! -d "/var/fe.seed/logs" ]] && mkdir -p /var/fe.seed/logs
+
+npm run start

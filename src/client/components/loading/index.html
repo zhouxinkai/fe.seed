@@ -1,0 +1,16 @@
+<div class="loading-wrapper">
+  <div class="circle" v-show="showFlag === 1">
+    <div v-for="n in 12"></div>
+  </div>
+
+  <div class="spinner" v-show="showFlag === 2">
+    <div v-for="n in 12"></div>
+  </div>
+
+  <div class="test" v-show="showFlag === 3">
+    <div v-for="n in 3"></div>
+  </div>
+  <div class="hint">
+    <slot></slot>
+  </div>
+</div>

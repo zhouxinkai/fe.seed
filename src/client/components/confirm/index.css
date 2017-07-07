@@ -1,0 +1,39 @@
+@define-mixin btn-base {
+  height: 50px;
+  font-size: 15px;
+  border: 0;
+}
+
+.confirm {
+    .info {
+      margin: 20px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #000000;
+      line-height: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      display: flex;
+    }
+
+    .btn-cancle {
+      @mixin btn-base;
+      color: #FD7150;
+      background: white;
+      border-top: 1px solid #D5D5D5;
+      flex: 1;
+    }
+
+    .btn-ok {
+      @mixin btn-base;
+      background: #FD7150;
+      color: white;
+      border-top: 1px solid #FD7150;
+      flex: 1;
+    }
+}

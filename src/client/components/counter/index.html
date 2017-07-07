@@ -1,0 +1,5 @@
+<div class="counter">
+  <button v-if="value" @click="subtract" :class="subtractStyle"></button>
+  <span class="counter-value" v-if="value">{{ value }}</span>
+  <button @click="add" :disabled="disableAdd" :class="addStyle"></button>
+</div>

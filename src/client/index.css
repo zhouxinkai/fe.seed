@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+}
+
+p,
+form,
+ul,
+h3,
+body {
+  padding: 0;
+  margin: 0;
+}
+span[class^='icon-'] {
+  font-family: iconfont;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+button.primary {
+  background: #FF6527;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  &[disabled] {
+    background: #CCCCCC;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+}
+
+.popup-error{
+    border-radius: 2px;
+
+    .info {
+      margin: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: #000000;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .btn-close{
+      height: 50px;
+      font-size: 15px;
+      color: #FD7150;
+      border: 0;
+      background: white;
+      width: 100%;
+      border-top: 1px solid #D5D5D5;
+    }
+}
+
+.tappable{
+  &:active{
+    background-color: #E35015;
+  }
+}

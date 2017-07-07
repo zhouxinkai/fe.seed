@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "module": "commonjs",
+    "removeComments": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "target": "ES5",
+    "lib": [
+      "dom",
+      "es7",
+      "scripthost",
+      "es2015.promise"
+    ],
+    "typeRoots": [
+      "../declarations/",
+      "../../node_modules/@types/"
+    ],
+    "baseUrl": "./"
+  },
+  "exclude": ["./assets/"]
+}

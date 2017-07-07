@@ -1,0 +1,17 @@
+<transition name="modal">
+  <popup :class="klass" v-show="value">
+    <span v-if='isShowCloseBtn' @click="close()" class="close">
+      <span class="icon-close"></span>
+    </span>
+    <header class="header">
+      <slot name="title"></slot>
+    </header>
+    <slot name="header" class="header"></slot>
+    <div class="modal-container">
+      <slot name="content"></slot>
+    </div>
+    <footer class="footer">
+      <slot name="footer"></slot>
+    </footer>
+  </popup>  
+</transition>

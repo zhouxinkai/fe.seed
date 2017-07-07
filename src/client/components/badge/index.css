@@ -1,0 +1,30 @@
+$size: 30px;
+
+@define-mixin base {
+    position: absolute;
+    right: -10px;
+    font-size: 16px;
+    border-radius: 50%;
+    height: $size;
+    width: $size;
+    line-height: $size;
+    text-align: center;
+    transform: scale(0.5) translate(15px, -15px); /*http://imweb.io/topic/5848d0fc9be501ba17b10a94*/
+}
+
+.badge-default {
+    @mixin base;
+    background: #FF6527;
+    color: white;
+    top: -9px;
+}
+
+.badge-hollow {
+    @mixin base;
+    top: -11px;
+    background: white;
+    color: #FF6527;
+    right: 0px;
+    border:1px solid;
+    font-weight: normal;
+}

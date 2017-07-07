@@ -1,0 +1,9 @@
+[{
+  "path": "/test",
+  "component": {
+    "path": "pages/test",
+    "async": true,
+    "chunk": "test"
+  },
+  "alias": "/?uuid"
+}]

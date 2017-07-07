@@ -1,0 +1,45 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 5s
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active in <2.1.8 */
+
+{
+  opacity: 0
+}
+
+.test-modal {
+  .modal-container {
+    padding: 8px;
+  }
+  .footer>div {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.test {
+  position: relative;
+  button {
+    height: 60px;
+    line-height: 40px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .user-info {
+    text-align: center;
+  }
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0096ff;
+}

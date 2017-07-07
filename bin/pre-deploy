@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+export NODE_ENV=development
+# npm --registry=https://registry.npm.taobao.org install
+yarn install --dev
+npm run build
+
+yarn install --prod
+APPKEY='fe.pos-buffet';
+tar -czf update.tar.gz statics
+curl -s --fail -F "name=${APPKEY}" -F "file=@update.tar.gz" build.fe.seed.com/bs/entry/upload
