@@ -1,8 +1,8 @@
 ## 启动
-yarn install
-yarn run compile
-yarn run dev
-127.0.0.1:9090/test
+- yarn install
+- yarn run compile
+- yarn run dev
+- http://127.0.0.1:9090/test
 
 ## feature list
 - 前后端分离
