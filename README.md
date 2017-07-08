@@ -1,4 +1,5 @@
 ## 启动
+- node version >= 8.0.0
 - npm install -g yarn
 - yarn install
 - yarn global add typescript
