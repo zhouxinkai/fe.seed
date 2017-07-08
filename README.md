@@ -1,5 +1,7 @@
 ## 启动
+- npm install -g yarn
 - yarn install
+- yarn global add typescript
 - yarn run compile
 - yarn run dev
 - http://127.0.0.1:9090/test
